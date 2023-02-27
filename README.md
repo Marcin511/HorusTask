@@ -25,12 +25,12 @@ String getMaterial();
 interface CompositeBlock extends Block {
 List<Block> getBlocks();
 }
--First of all I create new project and include require code
--Create NormalBlock class and implement interface Block to overwrite methods getMaterial and getColor
--Create ComplexBlock class and implement interface CompositeBlock
--Create NormalBlock field inside Complexblock class to transfer object NormalBlock by composition
--Implement method getBlock(); which return a list of box
--Implement method from Structure interface inside Wall class
--Create unit tests for testing methods in Wall class
+-First of all I create new project and include require code;
+-Create NormalBlock class and implement interface Block to overwrite methods getMaterial and getColor;
+-Create ComplexBlock class and implement interface CompositeBlock;
+-Create NormalBlock field inside Complexblock class to transfer object NormalBlock by composition;
+-Implement method getBlock(); which return a list of box;
+-Implement method from Structure interface inside Wall class;
+-Create unit tests for testing methods in Wall class;
 -One of the tests don't pass and I coudn't find solution. I try assertEquals() method but actual and expected list even they have the same elements,
 but they have diffrent address in memory.
