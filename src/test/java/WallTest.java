@@ -67,11 +67,10 @@ class WallTest {
         List<Block> blockList = Arrays.asList(new NormalBlock("brown","brick")
                 ,new NormalBlock("white","brick")
                 ,new NormalBlock("red","brick")
-                ,new NormalBlock("orange","brick")
-                ,new NormalBlock("orange","airbrick"));
+                ,new NormalBlock("orange","brick"));
         //when
-        List<Block> expectedBlockList = wall.findBlockByMaterial("brick");
+
         //then
-        assertThat(expectedBlockList,containsInAnyOrder(blockList));
+        assertEquals(blockList,wall.findBlockByMaterial("brick"));
     }
 }
