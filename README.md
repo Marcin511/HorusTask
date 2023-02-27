@@ -32,5 +32,3 @@ List<Block> getBlocks();
 -Implement method getBlock(); which return a list of box;
 -Implement method from Structure interface inside Wall class;
 -Create unit tests for testing methods in Wall class;
--One of the tests don't pass and I coudn't find solution. I try assertEquals() method but actual and expected list even they have the same elements,
-but they have diffrent address in memory.
